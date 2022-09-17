@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import html from '../public/assets/skills/html.png'
-import css from '../public/assets/skills/css.png'
-import js from '../public/assets/skills/javascript.png'
-import mgdb from '../public/assets/skills/mongodb.png'
-import react from '../public/assets/skills/react.png'
-import nextjs from '../public/assets/skills/nextjs.png'
-import supabase from '../public/assets/skills/supabase.png'
-import github from '../public/assets/skills/github.png'
+import html from '../public/assets/skills/html.png';
+import css from '../public/assets/skills/css.png';
+import js from '../public/assets/skills/javascript.png';
+import mgdb from '../public/assets/skills/mongodb.png';
+import react from '../public/assets/skills/react.png';
+import nextjs from '../public/assets/skills/nextjs.png';
+import supabase from '../public/assets/skills/supabase.png';
+import github from '../public/assets/skills/github.png';
 
 
 
@@ -118,9 +118,6 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </div>
