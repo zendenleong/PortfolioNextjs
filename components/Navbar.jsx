@@ -6,8 +6,7 @@ import {
   AiOutlineMail,
   AiOutlineMenu,
 } from "react-icons/ai";
-import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
-import {BsFillPersonLinesFill} from 'react-icons/bs';
+import {FaTelegram, FaGithub, FaLinkedinIn} from 'react-icons/fa';
 import { useRouter } from "next/router";
 import zd from '../public/assets/personal/zd.png';
 
@@ -84,7 +83,7 @@ const Navbar = () => {
         : "fixed left-[-100%] top-0 p-10 ease-in duration-500"}>
             <div>
                 <div className='flex w-full items-center justify-between'>
-                    <Image src='/../public/assets/personal/zd.png' width='60' height='60' alt='/' />
+                    <Image src={zd} width='60' height='60' alt='/' />
                     <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                         <AiOutlineClose/>
                     </div>
@@ -111,18 +110,26 @@ const Navbar = () => {
                 <div className="pt-40">
                     <p className="uppercase tracking-widest text-[#3b47c7]">Let's Connect!</p>
                     <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                            <FaLinkedinIn/>
-                        </div>
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                            <FaGithub/>
-                        </div>
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                            <AiOutlineMail/>
-                        </div>
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                            <BsFillPersonLinesFill/>
-                        </div> 
+                        <Link href='https://www.linkedin.com/in/zenden-leong-4b4712229/'>
+                            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                <FaLinkedinIn/>
+                            </div>
+                        </Link>
+                        <Link href='https://github.com/zendenleong'>
+                            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                <FaGithub/>
+                            </div>
+                        </Link>
+                        <Link href='mailto:zendenleong@gmail.com'>
+                            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                <AiOutlineMail/>
+                            </div>
+                        </Link>
+                        <Link href='https://t.me/zenphyr'>
+                            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                <FaTelegram />
+                            </div>
+                        </Link> 
                     </div>
                 </div>
 
