@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+//import { BsFillPersonLinesFill } from 'react-icons/bs';
+import {FaTelegram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Link from 'next/link';
 
 export const Main = () => {
@@ -31,15 +31,21 @@ export const Main = () => {
                             <FaLinkedinIn />
                         </div>
                     </Link>
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <FaGithub />
-                    </div>
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <AiOutlineMail />
-                    </div>
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <BsFillPersonLinesFill />
-                    </div>
+                    <Link href='https://github.com/zendenleong'>
+                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                            <FaGithub />
+                        </div>
+                    </Link>
+                    <Link href='mailto:zendenleong@gmail.com'>
+                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                            <AiOutlineMail />
+                        </div>
+                    </Link>
+                    <Link href='https://t.me/zenphyr'>
+                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                            <FaTelegram />
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
